@@ -1,3 +1,62 @@
-.header-hotsite > .container {
- 
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap');
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
 }
+
+body {
+  font-family: sans-serif;
+}
+
+.initial{
+  height: 100vh;
+  width: 100%;
+  background: url(https://www.imobibrasil.net/hs/imagensd/202102240947072377.jpg) no-repeat 50% 50%;
+  background-size: cover;
+}
+.header-hotsite{
+  width: 100%;
+  position: fixed;
+}
+
+.container-wrapper{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 50px;
+  transition: 1s;
+  overflow: hidden;
+  height: 200px;
+}
+
+.container-wrapper.black{
+  background-color: rgba(0,0,0,0.8);
+  height: 90px;
+}
+
+.menu-hotsite a{
+  font-family: 'Lato', sans-serif;
+  font-size: 13px;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.15em !important;
+  padding: 15px 0;
+  position: relative;
+  -webkit-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  text-decoration: none;
+  margin: 0 13px;
+}
+
+.content{
+  margin: 4em auto;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: justify;
+}
+
+
+
