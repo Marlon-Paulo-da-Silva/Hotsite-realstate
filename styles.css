@@ -13,7 +13,7 @@ body {
 .initial{
   height: 100vh;
   width: 100%;
-  background: url(https://www.imobibrasil.net/hs/imagensd/202102240947072377.jpg) no-repeat 50% 50%;
+  background: url(https://imobibrasil-static.s3-sa-east-1.amazonaws.com/t32/imagens/destaque/img1.jpg) no-repeat 50% 50%;
   background-size: cover;
 }
 .header-hotsite{
@@ -42,14 +42,61 @@ body {
   color: #fff;
   text-transform: uppercase;
   letter-spacing: 0.15em !important;
-  padding: 15px 0;
   position: relative;
-  -webkit-transition: all .2s ease-in-out;
-  -o-transition: all .2s ease-in-out;
-  transition: all .2s ease-in-out;
   text-decoration: none;
-  margin: 0 13px;
+  padding: 25px 13px;
 }
+
+.menu-hotsite a:nth-child(1){
+  border-bottom: 2px solid #ad1d00;
+	transition: all 0.3s ease-in;
+	padding: 10px 13px;
+}
+
+.menu-hotsite a:hover{
+  border-bottom: 2px solid #ad1d00;
+	transition: all 0.3s ease-in;
+	padding: 10px 13px;
+}
+
+.menu-hotsite a::after{
+  width: 35px;
+}
+
+.contact-me-hotsite{
+  background-color: transparent;
+    border: 1px solid #ad1d00;
+    color: #ad1d00;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 0.6px;
+    transition: all 0.3s ease-in-out;
+    padding: 8px 12px;
+    font-size: 11px;
+    text-decoration: none;
+    margin-left: auto;
+    border-radius: 5px;
+}
+.contact-me-hotsite:hover{
+  background-color: #ad1d00;
+  color: #ffffff;
+}
+
+.main{
+  height: 100vh;
+  width: 100%;
+  display: flex;
+}
+
+.container{
+  align-self: center;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 201px;
+}
+
 
 .content{
   margin: 4em auto;
