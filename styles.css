@@ -45,6 +45,8 @@ body {
   position: relative;
   text-decoration: none;
   padding: 25px 13px;
+  color: white;
+  text-shadow: black 0.1em 0.1em 0.2em
 }
 
 .menu-hotsite a:nth-child(1){
@@ -64,18 +66,17 @@ body {
 }
 
 .contact-me-hotsite{
-  background-color: transparent;
-    border: 1px solid #ad1d00;
-    color: #ad1d00;
-    text-transform: uppercase;
-    font-weight: 600;
-    letter-spacing: 0.6px;
-    transition: all 0.3s ease-in-out;
-    padding: 8px 12px;
-    font-size: 11px;
-    text-decoration: none;
-    margin-left: auto;
-    border-radius: 5px;
+  background-color: white;
+  border: 1px solid #ad1d00;
+  color: #ad1d00;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.6px;
+  transition: all 0.3s ease-in-out;
+  padding: 8px 12px;
+  font-size: 11px;
+  text-decoration: none;
+  border-radius: 5px;
 }
 .contact-me-hotsite:hover{
   background-color: #ad1d00;
@@ -88,13 +89,18 @@ body {
   display: flex;
 }
 
+.form-main{
+  display: flex;
+  flex-direction: column;
+}
+
 .container{
   align-self: center;
   width: 100%;
   text-align: center;
   display: flex;
   justify-content: space-between;
-  padding: 0 201px;
+  padding: 0 30%;
 }
 
 
