@@ -64,7 +64,8 @@ body {
   border-bottom: 2px solid #ad1d00;
 	transition: all 0.3s ease-in;
 	padding: 10px 13px;
-  
+  color: white;
+  text-decoration: none;
 }
 
 .main_col{
