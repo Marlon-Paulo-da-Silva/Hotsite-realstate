@@ -11,6 +11,9 @@ html, body {
 body{
   font-family: "Poppins", 'Montserrat' , Arial, sans-serif;
 }
+a{
+  text-decoration: none;
+}
 
 .initial{
   height: 100vh;
@@ -248,6 +251,7 @@ body{
   display: flex;
   justify-content: space-between;
 }
+
 .linha{
   text-align: center;
 }
@@ -259,6 +263,9 @@ body{
   display: inline-block;
   letter-spacing: 0.1em;
   position: relative;
+}
+.icon-feature{
+  height: 50px;
 }
 .maisinfo {
   text-align: center;
@@ -387,3 +394,15 @@ section.localizacao > div > div > ul{
   list-style: none;
 }
 
+.icon-rodape{
+  width: 50px;
+  margin-right: 10px;
+}
+.rodape{
+  display: flex;
+  flex-flow: column;
+}
+.rodape__signature{
+  display: flex;
+  justify-content: center;
+}
