@@ -167,13 +167,14 @@ body{
 .slider-form input, .slider-form textarea {
   font-family: 'Lato', sans-serif;
   background-color: #ffffff;
-  width: 100%;
+  width: 95%;
   height: 45px;
   border: none;
   margin-bottom: 10px;
   -webkit-transition: all .2s ease-in-out;
   -o-transition: all .2s ease-in-out;
   transition: all .2s ease-in-out;
+  padding-left: 10px;
 }
 
 .slider-form form textarea {

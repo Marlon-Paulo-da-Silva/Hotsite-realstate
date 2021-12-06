@@ -11,17 +11,18 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" crossorigin="anonymous">
+  
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
   <!-- Load font awesome icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
-
+</head>
 <body>
   <div class="initial">
     <div class="header-hotsite">
       <div class="container-wrapper">
         <a href="" target="blank" class="logo">
-          <img src="https://admin01.imobibrasil.net/imagens/site_modelo/201807270901318266.png" border="0" class="logo">
+          <img src="https://admin01.imobibrasil.net/imagens/site_modelo/201807270901318266.png" class="logo">
         </a>
         <div class="menu-hotsite">
           <a href="">Inicial</a>
@@ -112,7 +113,7 @@
   </ol>
   <section class="particularidades">
 		<div class="container-particularidades">
-			<div class="linha">
+			<div class="linha" data-aos="fade-right">
 								<div class="title text-center wow fadeIn" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeIn;">
 					<p class="subtitle">Algumas particularidades do empreendimento</p>
 					<h2><span class="bold">DETALHES DA PROPRIEDADE</span> </h2>
@@ -123,35 +124,35 @@
 					
 					<div class="particularidades-item col-md-15 wow fadeIn text-center" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeIn;">
 						<i class="icon fa icon-ruler"></i>
-						<h4>Square Feet</h4>
+						<h4>Metros Quadrados</h4>
 						<p>2500</p>
 					</div>
 
 					
 					<div class="particularidades-item col-md-15 wow fadeIn text-center" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeIn;">
 						<i class="icon fa icon-bed"></i>
-						<h4>Bedrooms</h4>
+						<h4>Quartos</h4>
 						<p>3</p>
 					</div>
 
 					
 					<div class="particularidades-item col-md-15 wow fadeIn text-center" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeIn;">
 						<i class="icon fa icon-bath"></i>
-						<h4>Bathrooms</h4>
+						<h4>Banheiros</h4>
 						<p>4</p>
 					</div>
 
 					
 					<div class="particularidades-item col-md-15 wow fadeIn text-center" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeIn;">
 						<i class="icon fa icon-calendar"></i>
-						<h4>Year Built</h4>
+						<h4>Ano da Construção</h4>
 						<p>1996</p>
 					</div>
 
 					
 					<div class="particularidades-item col-md-15 wow fadeIn text-center" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeIn;">
 						<i class="icon fa icon-car"></i>
-						<h4>Car Parking</h4>
+						<h4>Garagem</h4>
 						<p>2</p>
 					</div>
 
@@ -161,7 +162,7 @@
 		</div>
 	</section>
   <section id="" class="maisinfo">
-    <div class="container-maisinfo">
+    <div class="container-maisinfo" data-aos="fade-left">
       <h3>Empreendimento Jardim das Flores</h3>
       <p>O imóvel dos seus sonhos, está ao seu alcance! Viva em lugar conectado com as possibilidades que você busca,
         seja para se divertir, comer e beber bem ou simplesmente dar um passeio com a família, não faltam opções para
@@ -170,7 +171,7 @@
     </div>
   </section>
   
-  <section id="" class="info">
+  <section id="" class="info" data-aos="fade-right">
     <div class="container-info">
       <h3>Mais informações</h3>
 
@@ -178,7 +179,7 @@
         financiamento, uso do FGTS, compra de imóvel na planta, documentações e muito mais.</p>
     </div>
   </section>
-  <section class="localizacao">
+  <section class="localizacao" data-aos="fade-left">
     <div class="localizacao__title">
       <div class="container-localizacao">
         <h3>Localização</h3>
@@ -219,7 +220,7 @@
 
     <div class="rodape__signature">
       <a href="https://www.imobibrasil.com.br" target="_blank" title="Site para Imobiliárias"><img
-          src="/hs/h5/images/imobi.png" alt=""></a>
+          src="https://www.imobibrasil.net/hs/h5/images/imobi.png" alt=""></a>
     </div>
   </section>
   </div>
@@ -249,6 +250,10 @@
     });
   </script>
 
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 
 </body>
 
