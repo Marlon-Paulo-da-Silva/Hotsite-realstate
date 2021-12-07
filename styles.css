@@ -59,7 +59,7 @@ a{
   text-decoration: none;
   padding: 25px 13px;
   color: white;
-  text-shadow: black 0.1em 0.1em 0.2em
+  text-shadow: black 0.1em 0.1em 0.2em;
 }
 
 .menu-hotsite a:nth-child(1){
@@ -405,4 +405,49 @@ section.localizacao > div > div > ul{
 .rodape__signature{
   display: flex;
   justify-content: center;
+}
+
+@media only screen and (max-width: 950px) {
+  .main_col_left{
+    width: 50%;
+  }
+  .logo{
+    width: 150px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .main_col_left{
+    width: 50%;
+  }
+  .container-particularidades{
+    width: 80%;
+  }
+  .menu-hotsite a{
+    letter-spacing: 0.07em !important;
+    position: relative;
+    text-decoration: none;
+    padding: 25px 1px;
+    font-size: 13px;
+  }
+
+}
+
+@media only screen and (max-width: 850px) {
+  .menu-hotsite a{
+    letter-spacing: 0.07em !important;
+    position: relative;
+    text-decoration: none;
+    padding: 25px 1px;
+  }
+
+}
+
+@media only screen and (max-width: 650px) {
+  .menu-hotsite a{
+    display: none;
+  }
+  .contact-me-hotsite{
+    display: none;
+  }
 }
