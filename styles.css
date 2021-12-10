@@ -20,34 +20,36 @@ a{
   width: 100%;
   background: url(https://cdn-61373911c1ac189674c0a5e7.closte.com/wp-content/uploads/sites/17/2015/11/slide-lg-1.jpg) no-repeat 50% 50%;
   background-size: cover;
+  text-align: -webkit-center;
 }
 .header-hotsite{
   width: 100%;
   position: fixed;
   z-index: 9999;
+  transition: 1s;
+  height: 200px;
+  padding: 20px 0px;
+}
+
+.header-hotsite.black{
+  background-color: rgba(0,0,0,0.8);
+  height: 120px;
+  box-shadow: 0px 4px 20px rgb(5 47 97 / 8%);
+}
+
+.header-hotsite.black > img{
+  width: 130px;
 }
 
 .container-wrapper{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0px 50px;
-  transition: 1s;
-  overflow: hidden;
   
-  height: 200px;
+  transition: 1s;
+  
+  max-width: 1050px;
 }
-
-.container-wrapper.black{
-  background-color: rgba(0,0,0,0.8);
-  height: 120px;
-  box-shadow: 0px 4px 20px rgb(5 47 97 / 8%);
-}
-
-.container-wrapper.black > img{
-  width: 130px;
-}
-
 
 .menu-hotsite a{
   font-family: 'Lato', sans-serif;
@@ -119,6 +121,7 @@ a{
   border-radius: 5px;
   float: left;
   width: 200px;
+  height: 45px;
 }
 
 .contact-me-hotsite{
@@ -144,6 +147,7 @@ a{
   width: 100%;
   display: flex;
   justify-content: center;
+  max-width: 1050px;
 }
 
 .form-wrap {
@@ -165,6 +169,9 @@ a{
   margin-left: auto;
   padding: 20px;
   background-color: #fff;
+}
+body > div > div.main > div > div.main_col_right > div > div > div > div > form > p > span:nth-child(7) > textarea{
+  padding-top: 11px;
 }
 
 .slider-form input, .slider-form textarea {
@@ -206,7 +213,7 @@ a{
 
 .container{
   align-self: center;
-  width: 85%;
+  width: 100%;
   text-align: center;
   display: flex;
   justify-content: space-between;
@@ -250,10 +257,12 @@ a{
 .particularidades-list{
   display: flex;
   justify-content: space-between;
+  max-width: 1050px;
 }
 
 .linha{
   text-align: center;
+  text-align: -webkit-center;
 }
 .title h2{
   text-transform: uppercase;
@@ -280,10 +289,12 @@ a{
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+  max-width: 1050px;
 }
 .container-maisinfo > h3{
   font-size: 23px;
   font-weight: bold;
+
 }
 .container-maisinfo > p{
   margin: 20px 0;
@@ -322,7 +333,7 @@ a{
   align-items: center;
 }
 .container-info{
-  width: 75%;
+  max-width: 1050px;
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
@@ -350,6 +361,7 @@ section:nth-child(4) > div > p{
     justify-content: space-between;
     align-items: center;
     padding: 100px 0;
+    max-width: 1050px;
 }
 
 .rodape__item{
@@ -409,17 +421,37 @@ section.localizacao > div > div > ul{
 
 @media only screen and (max-width: 950px) {
   .main_col_left{
+
     width: 50%;
   }
   .logo{
     width: 150px;
   }
+  .container-wrapper{
+    padding: 0 10px;
+  }
+  .main > .container{
+    padding: 0 10px;
+  }
+  .lista-de-imagens{
+    display: none;
+  }
+  .container-particularidades{
+    width: 90%;
+  }
+  .container-maisinfo{
+    width: 90%;
+  }
+  .container-info{
+    width: 90%;
+  }
+  .rodape > .container {
+    width: 90%;
+  }
 }
 
 @media only screen and (max-width: 900px) {
-  .main_col_left{
-    width: 50%;
-  }
+
   .container-particularidades{
     width: 80%;
   }
@@ -431,6 +463,7 @@ section.localizacao > div > div > ul{
     font-size: 13px;
   }
 
+
 }
 
 @media only screen and (max-width: 850px) {
@@ -441,6 +474,31 @@ section.localizacao > div > div > ul{
     padding: 25px 1px;
   }
 
+}
+
+@media only screen and (max-width: 750px) {
+  .menu-hotsite a{
+    display: none;
+  }
+  .contact-me-hotsite{
+    display: none;
+  }
+
+  .main > .container{
+    display: flex;
+    text-align: -webkit-center;
+  }
+
+  .main_col_right{
+   display: none;
+  }
+  .main_col_left, .main_col_right{
+    width: 100%;
+    text-align-last: center;
+  }
+  body > div > div.main > div > div.main_col_left > button{
+    float: none!important;
+  }
 }
 
 @media only screen and (max-width: 650px) {
