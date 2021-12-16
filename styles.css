@@ -7,6 +7,7 @@ html, body {
   width: 100%;
   box-sizing: border-box;
   font-family: 'Poppins','Montserrat', sans-serif;
+  scroll-behavior: smooth;
 }
 body{
   font-family: "Poppins", 'Montserrat' , Arial, sans-serif;
@@ -33,12 +34,13 @@ a{
 
 .header-hotsite.black{
   background-color: rgba(0,0,0,0.8);
-  height: 120px;
+  height: 60px;
   box-shadow: 0px 4px 20px rgb(5 47 97 / 8%);
+  padding: 3px 0 3px 0;
 }
 
-.header-hotsite.black > img{
-  width: 130px;
+body > div > div.header-hotsite.black > div > a > img{
+  height: 50px;
 }
 
 .container-wrapper{
@@ -50,6 +52,22 @@ a{
   
   max-width: 1050px;
 }
+
+  .openMenu{
+    color: #fff;
+    font-size: 2rem;
+    margin: 20px;
+    cursor: pointer;
+    display: none;
+  }
+  .closeMenu{
+    color: #fff;
+    font-size: 2rem;
+    margin: 20px;
+    cursor: pointer;
+    display: none;
+  }
+
 
 .menu-hotsite a{
   font-family: 'Lato', sans-serif;
@@ -122,6 +140,7 @@ a{
   float: left;
   width: 200px;
   height: 45px;
+  cursor: pointer;
 }
 
 .contact-me-hotsite{
@@ -476,13 +495,39 @@ section.localizacao > div > div > ul{
 
 }
 
-@media only screen and (max-width: 750px) {
-  .menu-hotsite a{
+@media only screen and (max-width: 800px) {
+  .menu-hotsite{
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+    transition: top 1s ease;
     display: none;
   }
+    
   .contact-me-hotsite{
     display: none;
   }
+  .closeMenu{
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 11;
+    display: none;
+  }
+
+  .openMenu{
+    display: block;
+    z-index: 11;
+  }
+  
 
   .main > .container{
     display: flex;
@@ -491,6 +536,7 @@ section.localizacao > div > div > ul{
 
   .main_col_right{
    display: none;
+   transition: all 2s;
   }
   .main_col_left, .main_col_right{
     width: 100%;
@@ -498,6 +544,15 @@ section.localizacao > div > div > ul{
   }
   body > div > div.main > div > div.main_col_left > button{
     float: none!important;
+  }
+
+  .main_col_right.showform{
+    display: block;
+    text-align-last: unset;
+    padding: 0 20px;
+  }
+  .main_col_left.hideform{
+    display: none;
   }
 }
 
