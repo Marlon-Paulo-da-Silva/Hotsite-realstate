@@ -344,7 +344,7 @@ body > div > div.main > div > div.main_col_right > div > div > div > div > form 
 
 .info {
   text-align: center;
-  height: 350px;
+  height: 450px;
 }
 .info{
   width: 100%;
@@ -367,6 +367,32 @@ section:nth-child(4) > div > p{
   text-align: center;
   color: #84869a;
 }
+
+.images-carrousel{
+  margin-top: 40px;
+  
+}
+.carroussel-lista-de-imagens{
+  height: 200px;
+  width: 300px;
+  margin: 20px;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 3px 5px #000;
+}
+
+.carroussel-img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: all .2s linear;
+}
+
+.carroussel-img:hover{
+ transform: scale(1.4);
+}
+
+
 
 .container-localizacao{
   text-align: center;
