@@ -34,8 +34,8 @@
         <div class="menu-hotsite">
           <a href="#main">Inicial</a>
           <a href="#particularidades">Informações</a>
-          <a href="">Imagens</a>
-          <a href="">Localização</a>
+          <a href="#info">Imagens</a>
+          <a href="#localizacao">Localização</a>
         </div>
 
         <button class="contact-me-hotsite">
@@ -191,31 +191,31 @@
             <img
             class="carroussel-img"
               src="//cdn-61373911c1ac189674c0a5e7.closte.com/wp-content/uploads/sites/17/2015/11/slide-lg-3.jpg"
-              draggable="false">
+              >
           </a>
           <a href="//cdn-61373911c1ac189674c0a5e7.closte.com/wp-content/uploads/sites/17/2015/11/slide-lg-1.jpg" class="carroussel-lista-de-imagens">
             <img
             class="carroussel-img"
               src="//cdn-61373911c1ac189674c0a5e7.closte.com/wp-content/uploads/sites/17/2015/11/slide-lg-1.jpg"
-              draggable="false">
+              >
           </a>
           <a href="//cdn-61373911c1ac189674c0a5e7.closte.com/wp-content/uploads/sites/17/2015/11/slide-lg-2.jpg" class="carroussel-lista-de-imagens">
             <img
             class="carroussel-img"
               src="//cdn-61373911c1ac189674c0a5e7.closte.com/wp-content/uploads/sites/17/2015/11/slide-lg-2.jpg"
-              draggable="false">
+              >
           </a>
           <a href="//cdn-61373911c1ac189674c0a5e7.closte.com/wp-content/uploads/sites/17/2015/11/slide-lg-3.jpg" class="carroussel-lista-de-imagens">
             <img
             class="carroussel-img"
               src="//cdn-61373911c1ac189674c0a5e7.closte.com/wp-content/uploads/sites/17/2015/11/slide-lg-3.jpg"
-              draggable="false">
+              >
           </a>
           <a href="//cdn-61373911c1ac189674c0a5e7.closte.com/wp-content/uploads/sites/17/2015/11/slide-lg-3.jpg" class="carroussel-lista-de-imagens">
             <img
             class="carroussel-img"
               src="//cdn-61373911c1ac189674c0a5e7.closte.com/wp-content/uploads/sites/17/2015/11/slide-lg-3.jpg"
-              draggable="false">
+              >
           </a>
         </div>
           
@@ -297,6 +297,25 @@
     openMenu.addEventListener('click', show);
     closeMenu.addEventListener('click', close);
 
+    var largura = window.screen.width;
+    const clickOut = document.querySelector('.menu-hotsite');
+
+    if ($(window).width() < 800) {
+    
+      
+      clickOut.addEventListener('click', closeMenu);
+
+      function closeMenu(){
+        const menuHotsite = document.querySelector('.menu-hotsite');
+        const closeMenu = document.querySelector('.closeMenu');
+        const openMenu = document.querySelector('.openMenu');
+
+          menuHotsite.style.top = '-130%';
+          closeMenu.style.display = 'none';
+          openMenu.style.display = 'block';
+      }
+    }
+
     function show(){
       menuHotsite.style.display = 'flex';
       menuHotsite.style.top = '0';
@@ -336,11 +355,11 @@
   <script type="text/javascript">
     $('.slider-multiple-items').slick({
       dots: true,
-  infinite: false,
-  speed: 300,
-  slidesToShow: 4,
-  slidesToScroll: 4,
-  responsive: [
+      infinite: false,
+      speed: 300,
+      slidesToShow: 4,
+      slidesToScroll: 4,
+      responsive: [
     {
       breakpoint: 1024,
       settings: {
@@ -373,6 +392,21 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.3.0/lightgallery.min.js" integrity="sha512-+1CyleTPoFvPO15/CfBZ5h6k/mu/qCQe9uxq1tEfO7SRJ52MnCAQ561bAYkvrsGtnG7AkcvKtVwdeoZc8ps7bQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script>
   lightGallery(document.querySelector('.images-carrousel'));
+</script>
+<script>
+  var largura = window.screen.width;
+  const clickOut = document.querySelector('.menu-hotsite');
+
+  if ($(window).width() < 960) {
+    alert('Less than 960');
+    clickOut.addEventListener('click', closeMenu);
+
+    function closeMenu(){
+      menuHotsite.style.top = '-130%';
+      closeMenu.style.display = 'none';
+      openMenu.style.display = 'block';
+    }
+  }
 </script>
 </body>
 

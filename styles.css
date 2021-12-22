@@ -37,10 +37,15 @@ a{
   height: 60px;
   box-shadow: 0px 4px 20px rgb(5 47 97 / 8%);
   padding: 3px 0 3px 0;
+  overflow: hidden;
+}
+.header-hotsite.black > .container-wrapper{
+  height: 100%;
+  padding: 3px 0 3px 0;
 }
 
 body > div > div.header-hotsite.black > div > a > img{
-  height: 50px;
+  width: 90px;
 }
 
 .container-wrapper{
@@ -536,6 +541,19 @@ section.localizacao > div > div > ul{
     transition: top 1s ease;
     display: none;
   }
+
+  .menu-hotsite a:hover{
+    font-family: 'Lato', sans-serif;
+    font-size: 13px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 0.15em !important;
+    position: relative;
+    text-decoration: none;
+    padding: 25px 13px;
+    color: white;
+    text-shadow: black 0.1em 0.1em 0.2em;
+  }
     
   .contact-me-hotsite{
     display: none;
@@ -583,9 +601,7 @@ section.localizacao > div > div > ul{
 }
 
 @media only screen and (max-width: 650px) {
-  .menu-hotsite a{
-    display: none;
-  }
+  
   .contact-me-hotsite{
     display: none;
   }
